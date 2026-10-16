@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAG Chatbot - PDF Q&A</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📚 PDF RAG Chatbot</h1>
+            <p class="subtitle">Ask questions about your PDF document</p>
+        </header>
+
+        <div class="chat-container">
+            <div class="chat-messages" id="chatMessages">
+                <div class="message bot">
+                    <div class="message-content">
+                        <p>Hello Mayank Shakya! 👋</p>
+                        <p>I'm ready to answer questions about your PDF. What would you like to know?</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="input-container">
+                <form id="chatForm" class="chat-form">
+                    <input 
+                        type="text" 
+                        id="questionInput" 
+                        class="question-input" 
+                        placeholder="Type your question here..." 
+                        autocomplete="off"
+                        required
+                    >
+                    <button type="submit" class="send-button" id="sendButton">
+                        <span class="button-text">Send</span>
+                        <span class="loading-spinner" style="display: none;">⏳</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <div class="info-bar">
+            <span class="info-item">📄 PDF Loaded</span>
+            <span class="info-item">🤖 AI Ready</span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
